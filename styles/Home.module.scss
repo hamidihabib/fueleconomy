@@ -1,0 +1,76 @@
+.main {
+    width: 100%;
+    .container {
+        padding : 10px 20px;
+        overflow: auto;
+        height  : 100vh;
+        max-width: 800px;
+        margin: auto;
+
+        .form {
+
+            h3 {
+                padding: 5px 0;
+            }
+
+            .input {
+                border       : solid 1px gray;
+                display      : flex;
+                border-radius: 4px;
+                align-items  : center;
+                width        : 100%;
+
+
+                input {
+                    border          : none;
+                    outline         : none;
+                    width           : 100%;
+                    padding-inline  : 10px;
+                    background-color: transparent;
+                }
+
+                p {
+                    padding    : 5px 10px;
+                    border-left: solid 2px gray;
+                    margin     : 2px;
+
+                }
+
+
+            }
+
+            ul {
+                border          : solid 1px lightgray;
+                border-radius   : 4px;
+                position        : absolute;
+                background-color: rgb(240, 240, 240);
+                max-height      : 250px;
+                overflow        : auto;
+
+                li {
+                    list-style: none;
+                    padding   : 6px 10px;
+                    cursor    : pointer;
+                }
+
+                li:hover {
+                    background-color: lightgray;
+                }
+            }
+
+        }
+
+        .all_info {
+
+            ul {
+                padding: 10px;
+
+                li {
+                    span {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
