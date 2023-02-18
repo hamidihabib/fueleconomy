@@ -1,11 +1,12 @@
 .main {
     width: 100%;
+
     .container {
-        padding : 10px 20px;
-        overflow: auto;
-        height  : 100vh;
+        padding  : 10px 20px;
+        overflow : auto;
+        height   : 100vh;
         max-width: 800px;
-        margin: auto;
+        margin   : auto;
 
         .form {
 
@@ -14,11 +15,12 @@
             }
 
             .input {
-                border       : solid 1px gray;
-                display      : flex;
-                border-radius: 4px;
-                align-items  : center;
-                width        : 100%;
+                border          : solid 1px #888;
+                display         : flex;
+                border-radius   : 4px;
+                align-items     : center;
+                width           : 100%;
+                background-color: #ebebeb;
 
 
                 input {
@@ -31,12 +33,10 @@
 
                 p {
                     padding    : 5px 10px;
-                    border-left: solid 2px gray;
+                    border-left: solid 1px #888;
                     margin     : 2px;
-
+                    color      : #555;
                 }
-
-
             }
 
             ul {
@@ -57,7 +57,6 @@
                     background-color: lightgray;
                 }
             }
-
         }
 
         .all_info {
@@ -66,11 +65,36 @@
                 padding: 10px;
 
                 li {
+                    tspan {
+                        font-size: 10px;
+                    }
+
                     span {
                         color: blue;
                     }
                 }
             }
         }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background   : #888;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
 }
